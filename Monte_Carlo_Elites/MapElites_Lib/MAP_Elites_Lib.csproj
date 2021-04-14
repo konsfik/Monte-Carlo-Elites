@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0034CB2C-18DE-4A90-AB8F-EA6FE443B937}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MapElites_Lib</RootNamespace>
+    <AssemblyName>MapElites_Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Experiment_Runner\MEL_Experiment_Runner.cs" />
+    <Compile Include="MapElites_Algotithm\Algorithm\MEL__Operator_Settings.cs" />
+    <Compile Include="MapElites_Algotithm\Algorithm\MEL__Evaluation_Settings.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__Help_Methods.cs" />
+    <Compile Include="MapElites_Algotithm\Algorithm\MEL__Algorithm__Queries.cs" />
+    <Compile Include="MapElites_Algotithm\Algorithm\MEL__Algorithm.cs" />
+    <Compile Include="MapElites_Algotithm\Evaluation\MEL__Individual_Evaluation_Method.cs" />
+    <Compile Include="MapElites_Algotithm\Algorithm\MEL__Individual.cs" />
+    <Compile Include="MapElites_Algotithm\Generation\MEL__Individual_Generator.cs" />
+    <Compile Include="MapElites_Algotithm\Mutation\MEL__Individual_Mutator.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\Base_Classes\MEL__Parent_Selection_Method.cs" />
+    <Compile Include="MapElites_Algotithm\Algorithm\MEL__State.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\Base_Classes\MEL__Parent_Selection_Method__UCB.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__Curiosity.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__EXPLOIT_Offspring_Survival__Per__Individual.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__EXPLOIT_Offspring_Survival__Per__Location.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__EXPLORE__Per__Individual.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__EXPLORE__Per__Location.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__UCB_Offspring_Survival__Per__Individual.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__UCB_Offspring_Survival__Per__Location.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__GREEDY_Parent_Fitness.cs" />
+    <Compile Include="MapElites_Algotithm\Parent_Selection_Methods\MEL_PSM__Random.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Common_Tools\Common_Tools.csproj">
+      <Project>{28ca94c4-28d9-4418-b6ee-f5bea5410ec4}</Project>
+      <Name>Common_Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drawing_Utilities\Drawing_Utilities.csproj">
+      <Project>{2d3ebb5b-542d-4282-8993-ccb259b23ff3}</Project>
+      <Name>Drawing_Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Perfect_Mazes_Lib\Perfect_Mazes_Lib.csproj">
+      <Project>{80c2b595-70d1-47b2-aa56-197473af803d}</Project>
+      <Name>Perfect_Mazes_Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF1DF7C2-3A7B-4616-BFE2-18C25C167C80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Testbed_2__Arm</RootNamespace>
+    <AssemblyName>Testbed_2__Arm</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MapElites_ArmRepertoire\Fitness_Functions\MEL_ArmRepertoire__Individual_Evaluator__Feature_1.cs" />
+    <Compile Include="MapElites_ArmRepertoire\Fitness_Functions\MEL_ArmRepertoire__Individual_Evaluator__Feature_2.cs" />
+    <Compile Include="MapElites_ArmRepertoire\Fitness_Functions\MEL_ArmRepertoire__Individual_Evaluator__Fitness.cs" />
+    <Compile Include="MapElites_ArmRepertoire\MEL_ArmRepertoire__Individual.cs" />
+    <Compile Include="MapElites_ArmRepertoire\operators\MEL_ArmRepertoire__Individual_Generator.cs" />
+    <Compile Include="MapElites_ArmRepertoire\operators\MEL_ArmRepertoire__Individual_Mutator__Mutation_Step__Uniform_Rate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common_Tools\Common_Tools.csproj">
+      <Project>{28ca94c4-28d9-4418-b6ee-f5bea5410ec4}</Project>
+      <Name>Common_Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapElites_Lib\MAP_Elites_Lib.csproj">
+      <Project>{0034cb2c-18de-4a90-ab8f-ea6fe443b937}</Project>
+      <Name>MAP_Elites_Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
