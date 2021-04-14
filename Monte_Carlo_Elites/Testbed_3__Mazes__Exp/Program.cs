@@ -60,10 +60,6 @@ namespace Testbed_3__Mazes__Exp
             }
         }
 
-        ////////////////////////////////////////////////////////////////////////
-        /// ACTUAL EXPERIMENTS
-        ////////////////////////////////////////////////////////////////////////
-
         public static void Experiment_1()
         {
             Experiment_Utilities.Run_Multi_Experiment(
