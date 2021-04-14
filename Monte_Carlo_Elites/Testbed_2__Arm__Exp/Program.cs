@@ -61,7 +61,7 @@ namespace Testbed_2__Arm__Exp
         }
 
         /// <summary>
-        /// 
+        /// SLM_0: Random selection (R)
         /// </summary>
         public static void Arm_12D__SLM_0()
         {
@@ -78,6 +78,9 @@ namespace Testbed_2__Arm__Exp
                 );
         }
 
+        /// <summary>
+        /// SLM_1: Greedy selection (G)
+        /// </summary>
         public static void Arm_12D__SLM_1()
         {
             // settings:
@@ -93,6 +96,9 @@ namespace Testbed_2__Arm__Exp
                 );
         }
 
+        /// <summary>
+        /// SLM_2: Exploit offspring survival, per individual (Ei)
+        /// </summary>
         public static void Arm_12D__SLM_2()
         {
             // settings:
@@ -108,6 +114,9 @@ namespace Testbed_2__Arm__Exp
                 );
         }
 
+        /// <summary>
+        /// SLM_6: Exploit offspring cell, per cell (Ec)
+        /// </summary>
         public static void Arm_12D__SLM_6()
         {
             // settings:
@@ -123,6 +132,9 @@ namespace Testbed_2__Arm__Exp
                 );
         }
 
+        /// <summary>
+        /// SLM_10: UCB offspring cell, per individual (Ui)
+        /// </summary>
         public static void Arm_12D__SLM_10()
         {
             // settings:
@@ -138,6 +150,9 @@ namespace Testbed_2__Arm__Exp
                 );
         }
 
+        /// <summary>
+        /// SLM_14: UCB offspring cell, per cell (Uc)
+        /// </summary>
         public static void Arm_12D__SLM_14()
         {
             // settings:
@@ -153,6 +168,9 @@ namespace Testbed_2__Arm__Exp
                 );
         }
 
+        /// <summary>
+        /// SLM_22: Exploration, per individual (Xi)
+        /// </summary>
         public static void Arm_12D__SLM_22()
         {
             // settings:
@@ -168,6 +186,9 @@ namespace Testbed_2__Arm__Exp
                 );
         }
 
+        /// <summary>
+        /// SLM_23: Exploration, per cell (Xc)
+        /// </summary>
         public static void Arm_12D__SLM_23()
         {
             // settings:
@@ -181,6 +202,9 @@ namespace Testbed_2__Arm__Exp
                 );
         }
 
+        /// <summary>
+        /// SLM_25: Curiosity Score (C)
+        /// </summary>
         public static void Arm_12D__SLM_25()
         {
             // settings:
