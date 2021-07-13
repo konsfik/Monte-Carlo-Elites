@@ -512,20 +512,20 @@ The visual studio solution consists of a number of interconnected projects, each
 	<tr>
 		<td width="30%">
 			<!-- remember to change the relative link when this is inserted in the public repository -->
-			<a href="/UCB_MapElites_Experiments/MapElites_Lib">MAP_Elites_Lib</a>
+			<a href="/Monte_Carlo_Elites/MapElites_Lib">MAP_Elites_Lib</a>
 		</td>
 		<td width="70%">
 			This <b>library project</b> is an abstract implementation of the MAP-Elites algorithm that operates with 2 feature dimensions. 
 			The library includes all of the proposed parent selection methods (Ui, Uc, Ei, Ec, Xi, Xc, G, R, C).
 			The library has been implemented so as to facilitate extensibility, at least in the aspects of interest of the relevant research.
 			It is quite straightforwrd to implement different parent selection methods, by simply overriding the parent class.
-			Furthermore, the library is not bound to any specific problem, but is implemented concretely for each one of the three test-beds in separate projects (<a href="/UCB_MapElites_Experiments/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a>, <a href="/UCB_MapElites_Experiments/Testbed_2__Arm">Testbed_2__Arm</a>, <a href="/UCB_MapElites_Experiments/Testbed_3__Mazes">Testbed_3__Mazes</a>).
+			Furthermore, the library is not bound to any specific problem, but is implemented concretely for each one of the three test-beds in separate projects (<a href="/Monte_Carlo_Elites/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a>, <a href="/Monte_Carlo_Elites/Testbed_2__Arm">Testbed_2__Arm</a>, <a href="/Monte_Carlo_Elites/Testbed_3__Mazes">Testbed_3__Mazes</a>).
 			Consequently, one may easily apply the selected methodologies to other problems, by implementing a relatively small number of classes.
 		</td>
 	</tr>
 	<tr>
 		<td width="30%">
-			<a href="/UCB_MapElites_Experiments/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a>
+			<a href="/Monte_Carlo_Elites/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a>
 		</td>
 		<td width="70%">
 			This <b>library project</b> is a concrete implementation of the MAP-Elites algorithm for the Rastrigin test-bed.
@@ -534,7 +534,7 @@ The visual studio solution consists of a number of interconnected projects, each
 	</tr>
 	<tr>
 		<td width="30%">
-			<a href="/UCB_MapElites_Experiments/Testbed_1__Rastrigin__Exp">Testbed_1__Rastrigin__Exp</a>
+			<a href="/Monte_Carlo_Elites/Testbed_1__Rastrigin__Exp">Testbed_1__Rastrigin__Exp</a>
 		</td>
 		<td width="70%">
 			This <b>console application</b> can be used to reproduce the experiments of the Rastrigin test-bed.
@@ -543,16 +543,16 @@ The visual studio solution consists of a number of interconnected projects, each
 	</tr>
 	<tr>
 		<td width="30%">
-			<a href="/UCB_MapElites_Experiments/Testbed_2__Arm">Testbed_2__Arm</a>
+			<a href="/Monte_Carlo_Elites/Testbed_2__Arm">Testbed_2__Arm</a>
 		</td>
 		<td width="70%">
 			This <b>library project</b> is a concrete implementation of the MAP-Elites algorithm for the Arm Repertoire test-bed.
-			Similar to the <a href="/UCB_MapElites_Experiments/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a> project, this one also references the <a href="/UCB_MapElites_Experiments/MapElites_Lib">MAP_Elites_Lib</a> library and implements the missing parts.
+			Similar to the <a href="/Monte_Carlo_Elites/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a> project, this one also references the <a href="/Monte_Carlo_Elites/MapElites_Lib">MAP_Elites_Lib</a> library and implements the missing parts.
 		</td>
 	</tr>
 	<tr>
 		<td width="30%">
-			<a href="/UCB_MapElites_Experiments/Testbed_2__Arm__Exp">Testbed_2__Arm__Exp</a>
+			<a href="/Monte_Carlo_Elites/Testbed_2__Arm__Exp">Testbed_2__Arm__Exp</a>
 		</td>
 		<td width="70%">
 			A <b>console application</b> that can reproduce the experiments of the Arm Repertoire test-bed.
@@ -561,7 +561,7 @@ The visual studio solution consists of a number of interconnected projects, each
 	</tr>
 	<tr>
 		<td width="30%">
-			<a href="/UCB_MapElites_Experiments/Testbed_3__Mazes">Testbed_3__Mazes</a>
+			<a href="/Monte_Carlo_Elites/Testbed_3__Mazes">Testbed_3__Mazes</a>
 		</td>
 		<td width="70%">
 			This <b>library project</b> is a concrete implementation of the MAP-Elites algorithm for the Maze Generation test-bed.
@@ -569,7 +569,7 @@ The visual studio solution consists of a number of interconnected projects, each
 	</tr>
 	<tr>
 		<td width="30%">
-			<a href="/UCB_MapElites_Experiments/Testbed_3__Mazes__Exp">Testbed_3__Mazes__Exp</a>
+			<a href="/Monte_Carlo_Elites/Testbed_3__Mazes__Exp">Testbed_3__Mazes__Exp</a>
 		</td>
 		<td width="70%">
 			This <b>console application</b> can be used to reproduce the experiments of the Maze Generation test-bed.
@@ -578,7 +578,7 @@ The visual studio solution consists of a number of interconnected projects, each
 	</tr>
 	<tr>
 		<td width="30%">
-			<a href="/UCB_MapElites_Experiments/Perfect_Mazes_Lib">Perfect_Mazes_Lib</a>
+			<a href="/Monte_Carlo_Elites/Perfect_Mazes_Lib">Perfect_Mazes_Lib</a>
 		</td>
 		<td width="70%">
 			This <b>library project</b> contains all the necessary functionality for generating, mutating and evaluating "perfect mazes".
@@ -603,7 +603,7 @@ If the project description seems too detailed and you just need to get started, 
 1. Download the source-code.
 2. Extract the zip file at your preferred location.
 3. Open the solution file () with Visual Studio.
-4. There are three executable projects in the solution (<a href="/UCB_MapElites_Experiments/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a>, <a href="/UCB_MapElites_Experiments/Testbed_2__Arm">Testbed_2__Arm</a> and <a href="/UCB_MapElites_Experiments/Testbed_3__Mazes">Testbed_3__Mazes</a>), each of which will allow you to run the experiments related to one of the three testbeds. The results will be saved in a new folder, next to the location of the corresponding executable.
+4. There are three executable projects in the solution (<a href="/Monte_Carlo_Elites/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a>, <a href="/Monte_Carlo_Elites/Testbed_2__Arm">Testbed_2__Arm</a> and <a href="/Monte_Carlo_Elites/Testbed_3__Mazes">Testbed_3__Mazes</a>), each of which will allow you to run the experiments related to one of the three testbeds. The results will be saved in a new folder, next to the location of the corresponding executable.
 
 
 
