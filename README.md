@@ -317,7 +317,6 @@ By observing the accumulation of fitness in the archive, during a single run, we
 In this case, the UCB per cell method manages to establish a good coverage much faster than all other methods, as is clearly seen at 10000 evaluations.
 Similar to the previous example, given enough time, all methods converge to a very similar state.
 
-<!-- Arm Repertoire 12D: fitness heatmaps, single run, all methods -->
 <table>
 	<tr>
 		<td>
@@ -327,6 +326,19 @@ Similar to the previous example, given enough time, all methods converge to a ve
 	<tr>
 		<td>
 			<b>Figure 7: Arm Repertoire 12DoF:</b> Fitness heat-maps for a single run, captured at 10^3, 3 * 10^3, 10^4, 3 * 10^4, 10^5, 3 * 10^5 and 10^6 evaluations.
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td>
+			<img src="/README_images/gifs/Arm_Repertoire_Animated_Heatmaps.gif" title="rastrigin" /> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Figure 7: Arm Repertoire 12DoF:</b> Fitness heat-maps for a single run, animated.
 		</td>
 	</tr>
 </table>
