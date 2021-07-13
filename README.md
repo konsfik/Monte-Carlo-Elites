@@ -359,7 +359,7 @@ Similar to the previous example, given enough time, all methods converge to a ve
 
 
 ### Experiment 3: Maze Generation 
-The third experiment is based on a maze - generation problem (an example is shown in figure 5) whose purpose is to bring our method in the context of Procedural Content Generation.
+The third experiment is based on a maze - generation problem (an example is shown in figure 8) whose purpose is to bring our method in the context of Procedural Content Generation.
 For this problem we are using five behavioral characterizations, including various types of symmetry, as well as various topological characteristics of the generated mazes.
 Those five features are tested interchangeably as either behavioral dimensions, or the objective, resulting to a set of 30 variations of the same problem.
 
@@ -488,7 +488,7 @@ In this example we may see the distribution of fitness along the behavioral dime
 	</tr>
 	<tr>
 		<td>
-			<b>Figure 9: Maze generation:</b> progression of performance metrics between 10^3 and 10^6 evaluations, averaged across 100 runs for all variations of the experiment; shaded areas show the 95% confidence interval.
+			<b>Figure 10: Maze generation:</b> progression of performance metrics between 10^3 and 10^6 evaluations, averaged across 100 runs for all variations of the experiment; shaded areas show the 95% confidence interval.
 		</td>
 	</tr>
 </table>
