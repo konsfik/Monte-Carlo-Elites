@@ -603,8 +603,7 @@ If the project description seems too detailed and you just need to get started, 
 1. Download the source-code.
 2. Extract the zip file at your preferred location.
 3. Open the solution file () with Visual Studio.
-4. On the right of the VS window, you should see the structure of the solution, organized in the projects that were described in the previous section.
-There are three executable projects (<a href="/UCB_MapElites_Experiments/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a>, <a href="/UCB_MapElites_Experiments/Testbed_2__Arm">Testbed_2__Arm</a> and <a href="/UCB_MapElites_Experiments/Testbed_3__Mazes">Testbed_3__Mazes</a>), each of which will allow you to run the experiments related to one of the three testbeds. The results will be saved in a new folder, next to the location of the corresponding executable.
+4. There are three executable projects in the solution (<a href="/UCB_MapElites_Experiments/Testbed_1__Rastrigin">Testbed_1__Rastrigin</a>, <a href="/UCB_MapElites_Experiments/Testbed_2__Arm">Testbed_2__Arm</a> and <a href="/UCB_MapElites_Experiments/Testbed_3__Mazes">Testbed_3__Mazes</a>), each of which will allow you to run the experiments related to one of the three testbeds. The results will be saved in a new folder, next to the location of the corresponding executable.
 
 
 
