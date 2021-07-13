@@ -236,6 +236,19 @@ Figure 4 shows the accumulation of fitness in the archive, during a single run o
     </tr>
 </table>
 
+<table>
+	<tr>
+		<td>
+			<img src="/README_images/gifs/Rastrigin_Animated_Heatmaps.gif" title="rastrigin" /> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Figure 5: Rastrigin 6DoF:</b> Fitness heat-maps for a single run, animated.
+		</td>
+	</tr>
+</table>
+
 ### Experiment 2: Arm Repertoire
 The second experiment is based on the so-called "Arm-Repertoire" testbed, which is also commonly used for evaluating quality diversity algorithms.
 The problem represents a simplified simulation of a robotic arm that has an arbitrary number of degrees of freedom. 
@@ -290,7 +303,7 @@ The objective is to minimize the variance between those angles and the behaviora
     </tr>
 	<tr>
 		<td>
-			<b>Figure 5.</b> Arm Repertoire: representation of the robotic arm, explaining what the genotype (vector of angles) and behavior (end-point of the arm).
+			<b>Figure 6.</b> Arm Repertoire: representation of the robotic arm, explaining what the genotype (vector of angles) and behavior (end-point of the arm).
 		</td>
     </tr>
 </table>
@@ -308,7 +321,7 @@ However, similar to the previous problem, all variations of our proposed method 
 	</tr>
 	<tr>
 		<td>
-			<b>Figure 6: Arm Repertoire 12DoF:</b> progression of performance metrics between 10^3 and 10^6 evaluations. Results areaveraged from 100 runs; shaded areas show the 95% confidence interval.
+			<b>Figure 7: Arm Repertoire 12DoF:</b> progression of performance metrics between 10^3 and 10^6 evaluations. Results areaveraged from 100 runs; shaded areas show the 95% confidence interval.
 		</td>
 	</tr>
 </table>
@@ -325,7 +338,7 @@ Similar to the previous example, given enough time, all methods converge to a ve
 	</tr>
 	<tr>
 		<td>
-			<b>Figure 7: Arm Repertoire 12DoF:</b> Fitness heat-maps for a single run, captured at 10^3, 3 * 10^3, 10^4, 3 * 10^4, 10^5, 3 * 10^5 and 10^6 evaluations.
+			<b>Figure 8: Arm Repertoire 12DoF:</b> Fitness heat-maps for a single run, captured at 10^3, 3 * 10^3, 10^4, 3 * 10^4, 10^5, 3 * 10^5 and 10^6 evaluations.
 		</td>
 	</tr>
 </table>
@@ -338,7 +351,7 @@ Similar to the previous example, given enough time, all methods converge to a ve
 	</tr>
 	<tr>
 		<td>
-			<b>Figure 7: Arm Repertoire 12DoF:</b> Fitness heat-maps for a single run, animated.
+			<b>Figure 9: Arm Repertoire 12DoF:</b> Fitness heat-maps for a single run, animated.
 		</td>
 	</tr>
 </table>
